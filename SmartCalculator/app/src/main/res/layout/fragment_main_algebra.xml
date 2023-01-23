@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/llContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/common_padding_default"
+    tools:context=".usecases.home.MainMenuFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fm_label_algebra"
+        style="@style/Theme.SmartCalculator.MainPages.Title"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAlgebra"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_functions"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fm_label_geometria"
+        style="@style/Theme.SmartCalculator.MainPages.Title"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvGeometria"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_functions"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fm_label_conversions"
+        style="@style/Theme.SmartCalculator.MainPages.Title"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvConversiones"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_functions"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fm_label_others"
+        style="@style/Theme.SmartCalculator.MainPages.Title"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvOtros"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_functions"/>
+
+</LinearLayout>
